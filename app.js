@@ -8,7 +8,7 @@ const mongoose=require("mongoose");
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://cluster0.ap4pl.mongodb.net/todoListDB" , {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://cluster0.ap4pl.mongodb.net/todoListDBg" , {useNewUrlParser: true, useUnifiedTopology: true });
 
 // mongoDB schemas
 const itemSchema={
