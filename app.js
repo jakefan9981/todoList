@@ -35,7 +35,6 @@ let defaultItems=[defaultItem1,defaultItem2,defaultItem3];
 app.get("/",function(req,res){
   let today=date.getDate();
   Item.find({},function(err,foundItems){
-    console.log(foundItems.length);
     if(foundItems.length===0){
       Item.insertMany(defaultItems,function(err){
         if(err){
