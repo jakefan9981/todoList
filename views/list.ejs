@@ -1,0 +1,18 @@
+<%- include("header.ejs") -%>
+  <div class="box" id="heading">
+    <h1><%= todayIs %></h1>
+  </div>
+
+  <div class="box">
+    <% for (let i=1;i<Items.length;i++) { %>
+    <div class="item">
+      <input type="checkbox">
+      <p><%= Items[i] %></p>
+    </div>
+    <% } %>
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" autocomplete="off">
+      <button type="sumbit" name="submit button">+</button>
+    </form>
+  </div>
+<%- include("footer.ejs") -%>
