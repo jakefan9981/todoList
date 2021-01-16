@@ -8,7 +8,7 @@ const mongoose=require("mongoose");
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/todoListDB", {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://cluster0.ap4pl.mongodb.net/todoListDB" , {useNewUrlParser: true, useUnifiedTopology: true });
 
 // mongoDB schemas
 const itemSchema={
@@ -75,6 +75,10 @@ app.post("/delete",function(req,res){
   res.redirect("/");
 });
 
-app.listen(3000,function(){
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port,function(){
   console.log("server working");
 });
