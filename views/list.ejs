@@ -17,9 +17,18 @@
 
     <% }); %>
 
-    <form class="item" action="/" method="post">
-      <input type="text" name="newItem" autocomplete="off">
-      <button type="sumbit" name="submitButton" value= "<%= userNameIs %>" >+</button>
+    <form class="item" action="/add" method="post">
+      <input class="task" type="text" name="newItem" autocomplete="off">
+      <button type="sumbit" class="addNew" name="submitButton" value= "<%= userNameIs %>" >+</button>
     </form>
+
   </div>
+  <div class="container">
+    <div class="center">
+      <form class="homeButton" action="/home" method="post">
+        <button type="submit" class="home" name="button"><i class="fas fa-home fa-3x"></i></button>
+      </form>
+    </div>
+  </div>
+
 <%- include("footer.ejs") -%>

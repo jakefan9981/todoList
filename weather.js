@@ -1,5 +1,0 @@
-exports.getWeather=function(cityName){
-
-
-
-};

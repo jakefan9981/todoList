@@ -1,8 +1,9 @@
 <div class="box">
   <form action="/weather" method="post">
     <h4 id="weatherText"><%= weatherIs %></h4>
+    <h4 class="weather-prompt">enter a valid city name below to know its weather<h4>
     <input type="text" name="city" autocomplete="off">
     <input type="hidden" name="userName" value="<%= userNameIs %> ">
-    <button type="sumbit" name="submit button">+</button>
+    <button type="sumbit" name="submit button"><i class="fas fa-search"></i></button>
   </form>
 </div>
