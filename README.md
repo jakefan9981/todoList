@@ -1,7 +1,7 @@
 # todoList
 This repos is used to track the development of a web to-do list.
 
-deployed at https://yuxiang-fan-todo-list.herokuapp.com/
+Deployed at https://yuxiang-fan-todo-list.herokuapp.com/
 
 The development is still ongoing. The finished product will be a to-do list with some information gathering features. User can choose what info to be shown on the app such as the headlines of news that you are interested.
 The APP aims to provide a distraction-free shelter for users such that they will not be bothered by irrelevant but sensationalized information. Hopefully, this APP can increase users'productivity.
