@@ -10,5 +10,5 @@ Completed features:
 weather forcast feature: the users can know the weather of a city.
 user data storage: user's data are stored at mongo atlas so they will not be lost. 
 
-next step:
+Next step:
 Refactor the app with React library so that adding more features will not decrease the sustainability of the APP. 
